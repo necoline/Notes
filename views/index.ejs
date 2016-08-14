@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class='container'>
+    <h1>Post-It Notes</h1>
+    <div class='row'>
+      <form class='col m4 s12' id='add_note'>
+        <input type='text' name='title' placeholder='What do you need to do today?'>
+        <button type='submit' class='btn'>Submit</button>
+      </form>
+      <div class='col m8 s12'>
+        <h3 class='center'>To-Do</h3>
+        <hr/>
+        <div id='note_list'>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type='text/javascript' src='./javascripts/tasks.js'></script>
+  </body>
+</html>

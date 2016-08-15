@@ -21,8 +21,27 @@ router.post('/', function(req, res) {
 });
 
 router.post('/note_template', function(req, res) {
-  var task = req.body;
+  var note = req.body;
    res.render('note', { id: note.id, title: note.title, complete: note.complete });
 });
+
+
+router.put('/:id', function(req, res) {
+  Note.findByIdAndUpdate(
+    req.params.id,
+    {$set: {complete: req.body.complete}},
+    function(err, note){
+      res.send(note);
+    });
+});
+
+router.delete('/:id', function(req, res) {
+ Note.findById(req.params.id, function(err, note) {
+   note.remove();
+   res.status(200).send({success: true});
+  });
+});
+
+
 
 module.exports = router;

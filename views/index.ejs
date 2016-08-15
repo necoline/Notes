@@ -8,7 +8,7 @@
     <div class='container'>
     <h1>Post-It Notes</h1>
     <div class='row'>
-      <form class='col m4 s12' id='add_note'>
+      <form class='col m4 s12' id='add_note' method="post" action="/notes">
         <input type='text' name='title' placeholder='What do you need to do today?'>
         <button type='submit' class='btn'>Submit</button>
       </form>
@@ -20,6 +20,6 @@
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type='text/javascript' src='./javascripts/tasks.js'></script>
+    <script type='text/javascript' src='./javascripts/notes.js'></script>
   </body>
 </html>

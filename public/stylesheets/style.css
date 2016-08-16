@@ -7,3 +7,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+#add_note {
+  margin: 20px;
+}
+
+#list {
+  margin: 20px;
+
+}
+#input-card {
+  margin: 70px;
+  height: 300px;
+  width: 300px;
+}
+#list {
+  font-family: Handwriting-Dakota, HanziPen TC, Chalkduster
+}
+#heading {
+  font-family: Chalkduster
+}
